@@ -25,6 +25,6 @@ def get_english_meaning(file_path, emoticon)
   if lists["get_meaning"].include?(emoticon)
     return lists["get_meaning"][emoticon]
   else 
-    return "Sorry"
+    return "Sorry, that emoticon was not found"
   end
 end
