@@ -13,7 +13,11 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   lists= load_library(file_path)
-  if lists[]
+  if lists["get_emoticon"].include?(emoticon)
+    return lists["get_emoticon"][emoticon]
+  else
+    return "Sorry"
+  end
 end
 
 def get_english_meaning
